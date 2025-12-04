@@ -9,4 +9,6 @@ java -Xms1G -Xmx2G -jar PaDEL-Descriptor.jar \
   -retainorder \
   -removesalt \
   -standardizenitro
+  -threads 8
+
 
