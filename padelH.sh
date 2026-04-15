@@ -1,2 +1,14 @@
-java -Xms1G -Xmx1G -Djava.awt.headless=true -jar ./PaDEL-Descriptor/PaDEL-Descriptor.jar -removesalt -standardizenitro -2d -fingerprints -descriptortypes ./PaDEL-Descriptor/PubchemFingerprinter.xml -dir ./ -file descriptors_output.csv
+#!/bin/bash
 
+!java -Xms1G -Xmx2G -jar PaDEL-Descriptor.jar \
+  -dir input/ \
+  -file output.csv \
+  -2d \
+  -3d \
+  -fingerprints \
+  -descriptortypes output.xml \
+  -retainorder \
+  -removesalt \
+  -standardizenitro \
+  -threads 2 \
+  -maxruntime 5
