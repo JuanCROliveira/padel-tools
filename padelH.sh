@@ -6,7 +6,6 @@ java -Xms1G -Xmx2G -jar PaDEL-Descriptor.jar \
   -2d \
   -3d \
   -fingerprints \
-  -descriptortypes output.xml \
   -retainorder \
   -removesalt \
   -standardizenitro \
